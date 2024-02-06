@@ -1,0 +1,34 @@
+Comment Controller
+List of routes to get Comment data.
+Get List
+Get list of comments sorted by creation date.
+- Pagination query params available.
+- Created query params available.
+GET
+/comment
+Response: List(Comment Preview)
+Get List By Post
+Get list of comments for specific post sorted by creation date.
+- Pagination query params available.
+- Created query params available.
+GET
+/post/:id/comment
+Response: List(Comment Preview)
+Get List By User
+Get list of comments for specific user sorted by creation date.
+- Pagination query params available.
+- Created query params available.
+GET
+/user/:id/comment
+Response: List(Comment Preview)
+Create Comment
+Create new comment, return created comment data.
+Body: Comment Create (owner and post fields are required)
+POST
+/comment/create
+Response: Comment
+Delete Comment
+Delete comment by id, return id of deleted post
+DELETE
+/comment/:id
+Response: string

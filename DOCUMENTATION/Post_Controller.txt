@@ -1,0 +1,45 @@
+Post Controller
+List of routes to get Post data.
+Get List
+Get list of posts sorted by creation date.
+- Pagination query params available.
+- Created query params available.
+GET
+/post
+Response: List(Post Preview)
+Get List By User
+Get list of posts for specific user sorted by creation date.
+- Pagination query params available.
+- Created query params available.
+GET
+/user/:id/post
+Response: List(Post Preview)
+Get List By Tag
+Get list of posts for specific tag sorted by creation date.
+- Pagination query params available.
+- Created query params available.
+GET
+/tag/:id/post
+Response: List(Post Preview)
+Get Post by id
+Get post full data by post id
+GET
+/post/:id
+Response: Post
+Create Post
+Create new post, return created post data.
+Body: Post Create (owner and post fields are required)
+POST
+/post/create
+Response: Post
+Update Post
+Update post by id, return updated Post data
+Body: Post data, (owner field is forbidden to update)
+PUT
+/post/:id
+Response: Post
+Delete Post
+Delete post by id, return id of deleted post
+DELETE
+/post/:id
+Response: string

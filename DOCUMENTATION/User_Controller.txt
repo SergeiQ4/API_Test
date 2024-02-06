@@ -1,0 +1,31 @@
+User Controller
+List of routes to get User data.
+Get List
+Get list of users sorted by registration date.
+- Pagination query params available.
+- Created query params available.
+GET
+/user
+Response: List(User Preview)
+Get User by id
+Get user full data by user id
+GET
+/user/:id
+Response: User
+Create User
+Create new user, return created user data.
+Body: User Create (firstName, lastName, email are required)
+POST
+/user/create
+Response: User
+Update User
+Update user by id, return updated User data
+Body: User data, only fields that should be updated. (email is forbidden to update)
+PUT
+/user/:id
+Response: User
+Delete User
+Delete user by id, return id of deleted user
+DELETE
+/user/:id
+Response: string

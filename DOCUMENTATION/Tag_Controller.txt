@@ -1,0 +1,7 @@
+Tag Controller
+List of routes to get Tag data.
+Get List
+Get list of tags
+GET
+/tag
+Response: List(string)
